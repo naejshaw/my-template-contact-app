@@ -9,12 +9,13 @@ const Container = styled.div`
   gap: 1rem;
   `
   
-  const Image = styled.img`
+ const Image = styled.img`
   width: 20rem;
   height: 20rem;
   border-radius: 1rem;
   border: 1px solid blue;
-  `
+  object-fit: contain;
+`
   
 const Text = styled.p`
   text-align: justify;

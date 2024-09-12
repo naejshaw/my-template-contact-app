@@ -7,7 +7,7 @@ const Section = styled.section`
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
-    width: 80%;
+    width: 100%;
     margin: 1rem auto;
 `
 //const Title = styled.h1`
