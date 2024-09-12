@@ -1,0 +1,23 @@
+{
+  "name": "my-template-contact-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "formik": "^2.4.6",
+    "nodemailer": "^6.9.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-messenger-chat": "^0.0.1",
+    "react-scripts": "0.9.5",
+    "react-whatsapp": "^0.3.0",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.1.13",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
