@@ -26,7 +26,7 @@ const SocialLink = styled.a`
   text-decoration: none;
   
   &:hover{
-    color: blue;
+    color: rgba(255, 255, 255, 0.68);
   }
 `
 

@@ -36,8 +36,10 @@ const List = styled.ul`
 `
 
 const Link = styled.a`
+  text-decoration: none;
+  color: white;
   &:hover{
-    color: blue;
+    color: rgba(255, 255, 255, 0.68);
     cursor: pointer;
   }
 `
@@ -50,11 +52,11 @@ const Header = ({company}) => {
           </Container>
           <Container>
             <List>
-              <Link>Home</Link>
-              <Link>About</Link>
-              <Link>Services</Link>
-              <Link>Testimonials</Link>
-              <Link>Contact</Link>
+              <Link href='/'>Home</Link>
+              <Link href='#about'>About</Link>
+              <Link href='#services'>Services</Link>
+              <Link href='#testimonials'>Testimonials</Link>
+              <Link href='#contact'>Contact</Link>
             </List>
           </Container>
         </AppHeader>

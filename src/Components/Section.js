@@ -6,9 +6,10 @@ const Section = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background: rgba(64, 115, 154, 0.2);
     height: 100vh;
     width: 100%;
-    margin: 1rem auto;
+    margin: 0 auto;
 `
 //const Title = styled.h1`
 //font-size: 48px;

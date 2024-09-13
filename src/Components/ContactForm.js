@@ -50,7 +50,7 @@ const ContactForm = () => {
   
     //TODO: Receber os valores dos campos do formulário e armazenar em um banco de dados local
     return (
-          <Section>
+          <Section id='contact'>
             <h2>Contato</h2> 
             <Form>
               {/* ... campos do formulário */}
