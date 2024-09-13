@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from './Section';
 import styled from 'styled-components';
+import axios from 'react'
 
 const Label = styled.label`
   margin: 10px;
@@ -47,7 +48,16 @@ const Line = styled.div`
   height: 1.5rem;
 `
 const ContactForm = () => {
-  
+  const handleSubmit = async (values) => {
+    try {
+      const response = await axios.post('http://localhost:3001/submit', values);
+      alert(response.data); // Exibe a mensagem de sucesso
+      window.location.href = '/';
+    } catch (error) {
+      console.error(error);
+      alert('Erro ao enviar mensagem.');
+    }
+  };
     //TODO: Receber os valores dos campos do formulário e armazenar em um banco de dados local
     return (
           <Section id='contact'>
