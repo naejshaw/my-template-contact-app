@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import datas from '../data.json'
 
 const FooterDiv = styled.div`
-  background-color: #222;
+  background-color: ${datas.colors.headerBackground};
   width: 100%;
   margin-bottom: 0;
   position: relative;
@@ -26,7 +27,7 @@ const SocialLink = styled.a`
   text-decoration: none;
   
   &:hover{
-    color: rgba(255, 255, 255, 0.68);
+    color: ${datas.colors.linkHover};
   }
 `
 
@@ -35,9 +36,9 @@ const Footer = ({company}) => {
     <FooterDiv>
       {/* Links para redes sociais, termos de uso, etc. */}
       <Social>
-        <li><SocialLink href="#">Facebook</SocialLink></li>
-        <li><SocialLink href="#">Instagram</SocialLink></li>
-        <li><SocialLink href="#">Whatsapp</SocialLink></li>
+        <li><SocialLink href={datas.socials.facebook}>Facebook</SocialLink></li>
+        <li><SocialLink href={datas.socials.instagram}>Instagram</SocialLink></li>
+        <li><SocialLink href={datas.socials.whatsapp}>Whatsapp</SocialLink></li>
       </Social>
       <p>&copy; {new Date().getFullYear()} {company}</p>
     </FooterDiv>

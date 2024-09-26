@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import datas from '../data.json'
 
+//TODO: Extrair a cor de background de um JSON
 const Section = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background: rgba(64, 115, 154, 0.2);
+    background: ${datas.colors.sectionBackground};
     height: 100vh;
     width: 100%;
     margin: 0 auto;

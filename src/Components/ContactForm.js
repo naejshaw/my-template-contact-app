@@ -2,6 +2,7 @@ import React from 'react';
 import Section from './Section';
 import styled from 'styled-components';
 import axios from 'react'
+import datas from '../data.json'
 
 const Label = styled.label`
   margin: 10px;
@@ -21,12 +22,12 @@ const Textarea = styled.textarea`
 const Button = styled.button`
   padding: 10px;
   margin: 10px;
-  border: 1px solid blue;
+  border: 1px solid ${datas.colors.primary};
   border-radius: 0.5rem;
   &:hover{
     cursor: pointer;
-    background-color: blue;
-    color: white;
+    background-color: ${datas.colors.primary};
+    color: ${datas.colors.tertiary};
   }
 `
 const Form = styled.form`
@@ -37,7 +38,7 @@ const Form = styled.form`
   gap: 3rem;
   width: 70%;
   min-height: fit-content;
-  border: 1px solid blue;
+  border: 1px solid ${datas.colors.primary};
   border-radius: 1rem;
 `
 const Line = styled.div`

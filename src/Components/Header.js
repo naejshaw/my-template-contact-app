@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import styled from 'styled-components';
+import datas from '../data.json'
 
 const Logo = styled.img`
   animation: App-logo-spin infinite 20s linear;
@@ -9,7 +10,7 @@ const Logo = styled.img`
 `
 
 const AppHeader = styled.div`
-  background-color: #222;
+  background-color: ${datas.colors.headerBackground};
   width: 100%;
   margin: 0;
   top: 0;
@@ -39,7 +40,7 @@ const Link = styled.a`
   text-decoration: none;
   color: white;
   &:hover{
-    color: rgba(255, 255, 255, 0.68);
+    color: ${datas.colors.linkHover};
     cursor: pointer;
   }
 `

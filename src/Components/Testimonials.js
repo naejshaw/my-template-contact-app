@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import profile1 from '../assets/profile1.jpg'
 import profile2 from '../assets/profile2.jpg'
 import profile3 from '../assets/profile3.jpg'
+import datas from '../data.json'
 
 const Section = styled.section`
     display: flex;
@@ -18,7 +19,7 @@ const Image = styled.img`
   width: 20rem;
   height: 20rem;
   border-radius: 1rem;
-  border: 1px solid blue;
+  border: 1px solid ${datas.colors.primary};
   object-fit: contain;
   &:hover{
     object-fit: cover;
@@ -57,9 +58,9 @@ const Testimonials = () => {
     <Section id='testimonials'>
       <h2>Depoimentos</h2>
       <Container>
-        <Testimonial author={'Fulano'} imgAlt={'Fulano profile'} imgPath={profile1} text={'Muita felicidade'}/>
-        <Testimonial author={'Ciclano'} imgAlt={'Ciclano profile'} imgPath={profile2} text={'Muita alegria'}/>
-        <Testimonial author={'Beltrano'} imgAlt={'Beltrano profile'} imgPath={profile3} text={'Muita sorte'}/>
+        <Testimonial author={datas.texts.testimonials.t1.author} imgAlt={datas.texts.testimonials.t1.alt} imgPath={profile1} text={datas.texts.testimonials.t1.text}/>
+        <Testimonial author={datas.texts.testimonials.t2.author} imgAlt={datas.texts.testimonials.t2.alt} imgPath={profile2} text={datas.texts.testimonials.t2.text}/>
+        <Testimonial author={datas.texts.testimonials.t3.author} imgAlt={datas.texts.testimonials.t3.alt} imgPath={profile3} text={datas.texts.testimonials.t3.text}/>
       </Container>
     </Section>
   );
