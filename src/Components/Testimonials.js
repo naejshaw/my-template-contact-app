@@ -10,9 +10,9 @@ const Section = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto;
 `
 
 const Image = styled.img`
@@ -28,6 +28,7 @@ const Image = styled.img`
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;

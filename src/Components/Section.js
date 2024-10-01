@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import datas from '../data.json'
 
@@ -9,7 +8,7 @@ const Section = styled.section`
     align-items: center;
     justify-content: space-evenly;
     background: ${datas.colors.sectionBackground};
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin: 0 auto;
 `

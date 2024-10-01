@@ -12,20 +12,16 @@ function App () {
   const data =  datas
     
     return (
-
         <div className="App">
-          {/*TODO: Extrair o nome da empresa buscando de um arquivo JSON*/}
-          <Header company={datas.name}/>
+          <Header company={data.name}/>
           <div className='App-main'>
-            {/*TODO: Implementar as seções de apresentação da empresa, de produtos/serviços, de depoimentos*/}
             <AboutUs />
             <ProductsServices />
             <Testimonials />
             <ContactForm />
           </div>
           <div className='App-footer'>
-            {/*TODO: Implementar o footer da página*/}
-            <Footer company={datas.name}/>
+            <Footer company={data.name}/>
           </div>
         </div>
     );

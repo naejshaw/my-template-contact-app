@@ -7,8 +7,13 @@ import datas from '../data.json'
 const Container = styled.div`
   width: 80%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
   `
   const Section = styled.section`
     display: flex;
@@ -17,7 +22,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     height: 100vh;
     width: 100%;
-    margin: 1rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     background: url(${background}) no-repeat cover ;
 `
 //TODO: Extrair as cores de um JSON  
@@ -59,12 +64,12 @@ const AboutUs = () => {
     <Section id='about'>
       <Title>Sobre Nós</Title>
       <Container>
+        {/*TODO: Extrair as images de um JSON*/}
+        <Image src={fachada} alt='Teste'/>
         {/*TODO: Extrair o texto de um JSON*/}
         <Text>
           {datas.texts.bio}
         </Text>
-        {/*TODO: Extrair as images de um JSON*/}
-        <Image src={fachada} alt='Teste'/>
       </Container>
       <BackgroundImage src={background} alt='Teste'/>
     </Section>
